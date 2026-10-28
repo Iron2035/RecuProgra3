@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger House</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+   
+    <header>
+        <h1>Recuperatorio - División 132</h1>
+    </header>
+
+   
+    <main>
+
+  
+        <div class="catalogo">
+
+          
+            <div class="titulo-fila">
+                <h2 id="titulo-burger">Burger House</h2>
+                <span id="cart-count">Carrito (0)</span>
+            </div>
+
+            <hr>
+
+            <div class="filtros">
+
+                <div class="filtros-izquierda">
+
+                    <div class="categorias">
+                        <label><input type="radio" name="categoria" value="Todas" checked> Todas</label>
+                        <label><input type="radio" name="categoria" value="Clásicas"> Clásicas</label>
+                        <label><input type="radio" name="categoria" value="Especiales"> Especiales</label>
+                        <label><input type="radio" name="categoria" value="Combos"> Combos</label>
+                    </div>
+
+                    <select id="orden">
+                        <option value="">Ordenar por precio</option>
+                        <option value="menor">Menor precio</option>
+                        <option value="mayor">Mayor precio</option>
+                    </select>
+                </div>
+
+                <input type="search" id="buscador" class="barra-busqueda" placeholder="Buscar productos">
+            </div>
+
+            <section id="products-container"></section>
+        </div>
+
+        <aside class="carrito">
+            <h2>Mi carrito</h2>
+
+            <ul id="cart-list"></ul>
+
+            <p class="total">Total: <strong id="cart-total">$ 0</strong></p>
+
+            <button type="button" id="vaciar-carrito">Vaciar carrito</button>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>Aaron Ezequiel Piñeiro</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
